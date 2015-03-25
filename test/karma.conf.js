@@ -27,7 +27,7 @@ module.exports = function(config) {
 
     browserify: {
       debug: true,
-      transform: ['browserify-shim', 'bulkify', istanbul({
+      transform: ['browserify-shim', 'babelify', 'bulkify', istanbul({
         ignore: ['**/node_modules/**', '**/test/**'],
       })],
     },
