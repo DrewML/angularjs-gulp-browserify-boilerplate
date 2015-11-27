@@ -8,7 +8,7 @@ const filtersModule = angular.module('app.filters', []);
 const filters = bulk(__dirname, ['./**/!(*index|*.spec).js']);
 
 Object.keys(filters).forEach((key) => {
-  let item = filters[key];
+  const item = filters[key];
 
   filtersModule.filter(item.name, item.fn);
 });
