@@ -1,7 +1,7 @@
 'use strict';
 
 import angular from 'angular';
-const bulk = require('bulk-require');
+import bulk from 'bulk-require';
 
 const directivesModule = angular.module('app.directives', []);
 
